@@ -7,6 +7,7 @@ router.get('/search', UserController.getUsersByFilter);
 router.post('/', UserController.createUser);
 router.put('/:id/accept', UserController.acceptUserInventory);
 router.get('/:id', UserController.getUserById);
+router.patch('/:id/accept',UserController.changeUserEmail)
 router.patch('/:id/status',UserController.changeUserStatus)
 
 export default router;

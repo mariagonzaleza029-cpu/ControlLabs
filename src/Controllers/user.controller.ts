@@ -35,6 +35,14 @@ export class UserController {
     });
   };
 
+  public static changeUserEmail = (req: Request, res: Response): void => {
+    const { id } = req.params;
+   
+    res.status(501).json({
+      success: false,
+      message: `La aceptación del usuario ${id} todavía no está implementada.`
+    });
+  };
   public static changeUserStatus = (req: Request, res: Response): void => {
     const { id } = req.params;
    
