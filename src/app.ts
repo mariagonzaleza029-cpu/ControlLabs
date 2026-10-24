@@ -20,6 +20,8 @@ app.get('/api/v1/health', (req: Request, res: Response) => {
   });
 });
 
+
+
 app.use('/api/v1', apiRoutes);
 
 app.use((_req, res) => {
